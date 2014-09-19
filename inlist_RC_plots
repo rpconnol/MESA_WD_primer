@@ -77,12 +77,12 @@
  
       History_Panels6_num_panels = 1
  
-      History_Panels6_yaxis_name(1) = 'log_abs_mdot'
+      History_Panels6_yaxis_name(1) = 'star_mass'
       History_Panels6_yaxis_reversed(1) = .false.
-      History_Panels6_ymin(1) = -11d0 ! only used if /= -101d0
-      History_Panels6_ymax(1) = -5d0 ! only used if /= -101d0       
+      !History_Panels6_ymin(1) = -11d0 ! only used if /= -101d0
+      !History_Panels6_ymax(1) = -5d0 ! only used if /= -101d0       
       History_Panels6_ymargin(1) = 0.1 
-      History_Panels6_dymin(1) = -1 
+      History_Panels6_dymin(1) = 0.00001 
  
       History_Panels6_other_yaxis_name(1) = 'log_R' 
       History_Panels6_other_yaxis_reversed(1) = .false.

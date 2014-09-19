@@ -10,7 +10,7 @@
       
       
 
-      Grid5_file_flag = .true.
+      Grid5_file_flag = .false.
 
 
 
@@ -198,7 +198,7 @@
 
          ! file output
          Grid5_file_dir = 'png'
-         Grid5_file_prefix = 'grid5_'
+         Grid5_file_prefix = 'grid5big_'
          Grid5_file_cnt = 5 ! output when mod(model_number,Grid5_file_cnt)==0
          Grid5_file_width = -1 ! (inches) negative means use same value as for window
          Grid5_file_aspect_ratio = -1 ! negative means use same value as for window
