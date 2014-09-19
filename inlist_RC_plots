@@ -1,14 +1,17 @@
 &pgstar
          
+      Profile_Panels2_win_flag = .true. 	! abundances and burning
+      Grid5_win_flag = .true. 			! TRho, HR, Mdot and R vs time, and some text
+
+
       TRho_Profile_win_flag = .false.
       HR_win_flag = .false. 
       History_Panels6_win_flag = .false.
       Text_Summary5_win_flag = .false.
       
-      Profile_Panels2_win_flag = .true. 	! abundances and burning
-      Grid5_win_flag = .true. 			! TRho, HR, Mdot and R vs time, and some text
+      
 
-      Grid5_file_flag = .true.
+      Grid5_file_flag = .false.
       Profile_Panels2_file_flag = .false.
 
 
@@ -20,8 +23,8 @@
       Profile_Panels2_xleft = 0.12
       Profile_Panels2_xright = 0.88
 
-      Profile_Panels2_file_flag = .false.
-      Profile_Panels2_file_dir = '../../../../output/temp'
+      !Profile_Panels2_file_flag = .false.
+      Profile_Panels2_file_dir = 'png'
       Profile_Panels2_file_prefix = 'profile_Panels2_'
       Profile_Panels2_file_cnt = 10 ! output when mod(model_number,Profile_Panels2_file_cnt)==0
       Profile_Panels2_file_width = -1 ! (inches) negative means use same value as for window
@@ -181,7 +184,7 @@
          Grid5_txt_scale_factor(4) = 0.85 ! multiply txt_scale for subplot by this
          
          ! file output
-         Grid5_file_dir = '../../../../output/temp'
+         Grid5_file_dir = 'png'
          Grid5_file_prefix = 'grid5_'
          Grid5_file_cnt = 10 ! output when mod(model_number,Grid5_file_cnt)==0
          Grid5_file_width = -1 ! (inches) negative means use same value as for window
