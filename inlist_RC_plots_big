@@ -124,7 +124,7 @@
 
 ! Big grid
          
-         Grid5_win_width = 11.5
+         Grid5_win_width = 15 !11.5
          Grid5_win_aspect_ratio = 0.6 ! aspect_ratio = height/width
          
          Grid5_xleft = 0.08 ! fraction of full window width for margin on left

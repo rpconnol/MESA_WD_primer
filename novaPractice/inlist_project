@@ -1,0 +1,87 @@
+&star_job
+
+    load_saved_model = .true.
+    saved_model_name = '1M_WD_prenova.mod'
+
+    set_tau_factor = .true.  ! check loaded model for the value this should be set to
+    set_to_this_tau_factor = 300 
+
+    change_v_flag = .true.
+    new_v_flag = .false.
+
+    set_initial_model_number = .true.
+    initial_model_number = 0
+
+    set_initial_age = .true.
+    initial_age = 0 ! in years
+
+    pgstar_flag = .true.
+
+
+
+  ! ** Network and rate settings **
+
+    change_net = .true.      
+    new_net_name = 'co_burn.net'
+
+    !rate_tables_dir = '' 
+
+
+
+/ !end of star_job namelist
+
+
+
+
+&controls
+
+    !photostep = 10
+    !profile_interval = 10
+    !history_interval = 10
+    !terminal_cnt = 10
+    !write_header_frequency = 10
+
+
+
+  ! Stopping conditions
+
+    max_model_number = 30000
+
+    min_timestep_limit = 1d-15
+
+
+
+  ! Other Controls
+
+    varcontrol_target = 1d-3   ! Default: 1d-3 
+
+    !okay_to_reduce_gradT_excess = .true.
+
+
+
+  ! Nova controls
+
+    mass_change = 1d-8
+
+    accrete_same_as_surface = .false. 
+    accretion_h1 = 0.749D+00
+    accretion_h2 = 0
+    accretion_he3 = 0.292910D-04
+    accretion_he4 = 0.237D+00
+    accretion_zfracs = 4 ! Lodders 03
+
+    use_Type2_opacities = .true.		! No help alone
+    Zbase = 0.02d0				
+
+    super_eddington_wind_eta = 1		! No help alone
+    super_eddington_wind_Ledd_factor = 5
+
+    which_atm_option = 'grey_and_kap'		! Significant. Removes bump
+    Pextra_factor = -1
+
+
+    
+
+
+
+/ ! end of controls namelist

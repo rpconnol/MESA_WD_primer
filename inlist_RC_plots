@@ -89,7 +89,7 @@
       History_Panels6_other_ymin(1) = -101d0 ! only used if /= -101d0
       History_Panels6_other_ymax(1) = -101d0 ! only used if /= -101d0
       History_Panels6_other_ymargin(1) = 0.1 
-      History_Panels6_other_dymin(1) = -1
+      History_Panels6_other_dymin(1) = 0.00001
       
 
 ! Text summary
