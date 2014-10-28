@@ -1,7 +1,8 @@
 &star_job
 
     load_saved_model = .true.
-    saved_model_name = '1M_WD_prenova.mod'
+    !saved_model_name = '1M_WD_prenova.mod'
+    saved_model_name = 'ryans_model.mod'
 
     set_tau_factor = .true.  ! check loaded model for the value this should be set to
     set_to_this_tau_factor = 300 
@@ -16,6 +17,9 @@
     initial_age = 0 ! in years
 
     pgstar_flag = .true.
+
+    !save_model_number = 7680
+    !save_model_filename = 'ryans_model.mod'
 
 
 
