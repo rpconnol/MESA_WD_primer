@@ -3,6 +3,8 @@
     load_saved_model = .true.
     !saved_model_name = '1M_WD_prenova.mod'
     saved_model_name = 'ryans_model.mod'
+    !saved_model_name = 'barrys_model.mod'
+    !saved_model_name = 'jasons_model.mod'
 
     set_tau_factor = .true.  ! check loaded model for the value this should be set to
     set_to_this_tau_factor = 300 
@@ -27,9 +29,6 @@
 
     change_net = .true.      
     new_net_name = 'co_burn.net'
-    !new_net_name = 'mesa_151.net'
-
-    !rate_tables_dir = '' 
 
 
 
